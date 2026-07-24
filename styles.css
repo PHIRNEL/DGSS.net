@@ -880,7 +880,7 @@ mark {
         top: 50%;
         left: 340;
         z-index: 1002;
-        width: 350px;
+        width: 250px;
         height: 180px;
         object-fit: contain;
         transform: translateY(-50%);
