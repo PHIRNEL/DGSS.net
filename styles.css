@@ -549,7 +549,7 @@ body {
 
 
 /* =====================================
-   DIRECTEURS CENTRAUX (CADRE VERT À MOITIÉ)
+   DIRECTEURS CENTRAUX 
 ===================================== */
 
 .directeurs-section {
@@ -582,16 +582,16 @@ body {
 }
 
 .photo-directeur {
-    width: 120px;
-    height: 140px;
+    width: 150px;
+    height: 180px;
     object-fit: cover;
     object-position: top center;
     border: none;
     border-radius: 4px;
     margin: 0 auto 12px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    background: linear-gradient(to bottom, #006b4f 50%, #ffffff 50%);
-    padding: 3px 3px 0 3px;
+    background: #ffffff;
+    padding: 0;
     image-rendering: -webkit-optimize-contrast;
 }
 
@@ -610,8 +610,6 @@ body {
     font-weight: 600;
     line-height: 1.4;
 }
-
-
 /* =====================================
    DOCUMENTS & TABLEAU
 ===================================== */
