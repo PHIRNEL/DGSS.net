@@ -30,6 +30,32 @@
     src="script.js"
 ></script>
 
+<!-- Style pour le bouton "Retour en haut" -->
+<style>
+    #backToTopBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 99;
+        font-size: 18px;
+        background-color: #004d40;
+        color: white;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 12px 16px;
+        border-radius: 50%;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+        transition: background-color 0.3s, transform 0.3s;
+    }
+
+    #backToTopBtn:hover {
+        background-color: #00796b;
+        transform: scale(1.1);
+    }
+</style>
+
 </head>
 
 <body class="locked">
@@ -61,7 +87,7 @@
     <div class="nav-left">
 
         <img
-            src="0232RR.png"
+            src="001.png"
             alt="Logo du Ministère de la Sécurité Sociale"
             class="nav-photo"
         >
@@ -785,60 +811,7 @@
         <div class="directeurs-grid">
 
 
-            <div class="directeur-card">
-
-                <img
-                    src="DAEF.jpg"
-                    alt="Barthélemy MANGUEMBI"
-                    class="photo-directeur"
-                >
-
-
-                <h4>
-
-                    Barthélemy MANGUEMBI
-
-                </h4>
-
-
-                <em>
-
-                    Directeur de l'Administration,
-                    des Équipements et des Finances
-
-                </em>
-
-            </div>
-
-
-            <div class="directeur-card">
-
-                <img
-                    src="DSC0332.jpg"
-                    alt="Bruno Jérémi OKOUNGA"
-                    class="photo-directeur"
-                >
-
-
-                <h4>
-
-                    Bruno Jérémi OKOUNGA
-
-                </h4>
-
-
-                <em>
-
-                    Directeur des Études,
-                    du Développement
-                    et de la Prospective
-
-                </em>
-
-            </div>
-
-
-            <div class="directeur-card">
+<div class="directeur-card">
 
                 <img
                     src="33.jpg"
@@ -856,12 +829,15 @@
 
                 <em>
 
-                    Directeur de la Réglementation
-                    et des Relations Internationales
+                    Directeur de la Réglementation de la Sécurité Sociale et des Relations Internationales
+
+                </em> <em>
+                            (DRSSRI)
 
                 </em>
 
             </div>
+            
 
 
             <div class="directeur-card">
@@ -888,9 +864,79 @@
                     de la Sécurité Sociale
 
                 </em>
+                 <em>
+
+                    (DRAPSS)
+
+                </em>
 
             </div>
 
+
+
+            <div class="directeur-card">
+
+                <img
+                    src="DSC0332.jpg"
+                    alt="Bruno Jérémi OKOUNGA"
+                    class="photo-directeur"
+                >
+
+
+                <h4>
+
+                    Bruno Jérémi OKOUNGA
+
+                </h4>
+
+
+                <em>
+
+                    Directeur des Études,
+                    du Développement
+                    et de la Prospective
+
+                </em>
+                <em>
+
+                    (DEDP)
+
+                </em>
+
+            </div>
+
+
+
+
+            <div class="directeur-card">
+
+                <img
+                    src="DAEF.jpg"
+                    alt="Barthélemy MANGUEMBI"
+                    class="photo-directeur"
+                >
+
+
+                <h4>
+
+                    Barthélemy MANGUEMBI
+
+                </h4>
+
+
+                <em>
+
+                    Directeur de l'Administration,
+                    des Équipements et des Finances 
+
+                </em>
+                 <em>
+
+                   (DAEF)
+
+                </em>
+
+            </div>
         </div>
 
     </section>
@@ -1051,7 +1097,7 @@
 
         <ul>
 
-  <li>
+ <li>
                 <a
                     href="https://www.cnss.cg/"
                     target="_blank"
@@ -1070,7 +1116,7 @@
                     CRF
                 </a>
             </li>
-            
+          
  <li>
                 <a
                     href="https://camu-congo.fr/"
