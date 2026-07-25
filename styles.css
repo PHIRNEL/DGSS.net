@@ -166,6 +166,7 @@ body {
     .menu-toggle {
         display: none;
         padding: 0;
+       margin-right: 15px;
         background: transparent;
         border: none;
         color: #002147;
