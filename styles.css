@@ -1350,18 +1350,6 @@ mark {
     background: #00523c;
 }
 
-.footer-section.photo {
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
-}
-
-.footer-section.photo img {
-    width: 150px;
-
-    max-width: 100%;
-}
 
 .footer-bottom {
     position: relative;
@@ -1390,6 +1378,26 @@ mark {
         rgba(255, 255, 255, 0.6);
 
     font-size: 12px;
+}
+
+
+/* =====================================
+   LIEN DU FOOTER
+===================================== */
+
+.footer-bottom a {
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    transition:
+        color 0.3s ease;
+}
+
+.footer-bottom a:hover {
+    color: #d4af37;
 }
 
 /* =====================================
