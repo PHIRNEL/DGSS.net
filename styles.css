@@ -1400,63 +1400,37 @@ mark {
 .footer-bottom a:hover {
     color: #d4af37;
 }
+/* =====================================
+   RESPONSIVE DESIGN
+   TABLETTES & MOBILES
+===================================== */
+
 
 /* =====================================
-   RESPONSIVE DESIGN : TABLETTES & MOBILES
+   ORDINATEUR
+   3 colonnes en haut
+   1 colonne centrée en bas
 ===================================== */
-/* --- ORDINATEUR --- */
+
 .footer-content {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 30px;
     text-align: left;
+    align-items: start;
 }
 
-/* 4e colonne centrée en dessous */
+/* 4e colonne centrée */
 .footer-content > :nth-child(4) {
     grid-column: 2;
 }
 
 
-/* --- TABLETTES --- */
-@media (max-width: 1100px) {
+/* =====================================
+   TABLETTES
+   2 colonnes
+===================================== */
 
-    .footer-content {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 25px;
-        text-align: left;
-    }
-
-    .footer-content > :nth-child(4) {
-        grid-column: auto;
-    }
-}
-
-
-/* --- MOBILE --- */
-@media (max-width: 600px) {
-
-    .footer-content {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 25px 15px;
-        text-align: center;
-    }
-
-    /* Colonne 3 seule sur sa ligne */
-    .footer-content > :nth-child(3) {
-        grid-column: 1 / -1;
-    }
-
-    /* Colonne 4 seule sur sa ligne */
-    .footer-content > :nth-child(4) {
-        grid-column: 1 / -1;
-    }
-}
-
-
-
-
-/* --- TABLETTES ET ÉCRANS INTERMÉDIAIRES --- */
 @media (max-width: 1100px) {
 
     .navbar {
@@ -1470,27 +1444,25 @@ mark {
 
     .footer-content {
         grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 30px;
+        gap: 25px;
         text-align: left;
     }
-}
 
-
-/* --- MOBILES --- */
-@media (max-width: 600px) {
-
-    .footer-content {
-        grid-template-columns: 1fr;
-        gap: 25px;
-        text-align: center;
-    }
-
-    .directeurs-grid {
-        grid-template-columns: 1fr;
+    /* Annule le centrage de la 4e colonne */
+    .footer-content > :nth-child(4) {
+        grid-column: auto;
     }
 }
-/* --- TABLETTES PORTRAIT & PETITS ÉCRANS (max-width: 900px) --- */
+
+
+/* =====================================
+   TABLETTES PORTRAIT
+   ET PETITS ÉCRANS
+   max-width: 900px
+===================================== */
+
 @media (max-width: 900px) {
+
     .navbar {
         height: 85px;
         top: 45px;
@@ -1505,7 +1477,7 @@ mark {
     .nav-left .nav-photo {
         position: absolute;
         top: 50%;
-        left: 20px; /* Correction d'une valeur sans unité */
+        left: 20px;
         z-index: 1002;
         width: 250px;
         height: 180px;
@@ -1587,16 +1559,29 @@ mark {
         height: 500px;
     }
 
-    /* Footer adapté pour tablettes intermédiaires si nécessaire */
-    .footer-content {
+    .directeurs-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 25px;
+        gap: 15px;
+    }
+
+    .photo-directeur {
+        width: 100px;
+        height: 120px;
+    }
+
+    #searchBar {
+        width: 100%;
     }
 }
 
 
-/* --- MOBILES (max-width: 600px / 900px mobiles) --- */
-@media (max-width: 900px) {
+/* =====================================
+   MOBILE
+   max-width: 600px
+===================================== */
+
+@media (max-width: 600px) {
+
     .photo-frame {
         width: 285px;
         height: 355px;
@@ -1666,14 +1651,21 @@ mark {
         width: 100%;
     }
 
+
     /* =====================================
-       FOOTER INSTITUTIONNEL - MOBILES
+       FOOTER MOBILE
+       Colonne 1 | Colonne 2
+       ---------------------
+             Colonne 3
+       ---------------------
+             Colonne 4
     ===================================== */
+
     .footer-content {
         display: grid;
-        grid-template-columns: 1fr; /* Passage en colonne unique sur mobile */
-        gap: 30px;
-        text-align: center; /* Centrage pour un look officiel et épuré */
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 25px 15px;
+        text-align: center;
         padding: 20px 15px;
     }
 
@@ -1681,9 +1673,18 @@ mark {
         width: 100%;
     }
 
-    /* Gestion optionnelle de l'ordre des éléments dans le footer*/
+    /* Colonne 3 seule */
+    .footer-content > :nth-child(3) {
+        grid-column: 1 / -1;
+    }
+
+    /* Colonne 4 seule */
+    .footer-content > :nth-child(4) {
+        grid-column: 1 / -1;
+    }
+
     .footer-section.photo {
-        order: -1; 
+        order: -1;
     }
 
     .footer-bottom {
@@ -1693,6 +1694,6 @@ mark {
         gap: 10px;
         text-align: center;
         padding: 15px 0;
-        border-top: 1px solid rgba(255, 255, 255, 0.1); /* Séparation propre */
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
     }
 }
