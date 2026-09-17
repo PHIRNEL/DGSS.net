@@ -1424,8 +1424,8 @@ mark {
 
     .nav-left .nav-photo {
         left: 0;
-        width: 550px;
-        height: 280px;
+        width: 450px;
+        height: 180px;
     }
 
     .nav-links {
@@ -1683,7 +1683,7 @@ mark {
     .nav-left .nav-photo {
         left: 0;
         width: 350px;
-        height: 180px;
+        height: 130px;
 
     }
 
@@ -1932,8 +1932,8 @@ mark {
 
         top: 50%;
         left: 0;
-           width: 350px;
-        height: 180px;
+           width: 450px;
+        height: 100px;
         object-fit: contain;
 
         transform: translateY(-50%);
