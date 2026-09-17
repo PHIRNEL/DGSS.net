@@ -107,13 +107,15 @@ body {
         overflow: visible; 
     } 
  
-   .nav-left .nav-photo {
+  .nav-left .nav-photo {
     position: absolute;
     top: 50%;
     left: 0;
     z-index: 1002;
-    width: 180px;
-    height: 130px;
+
+    width: 150px;
+    height: 105px;
+
     object-fit: contain;
     transform: translateY(-50%);
     filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.15));
