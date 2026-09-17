@@ -1404,8 +1404,7 @@ mark {
 /* =====================================
    RESPONSIVE DESIGN : TABLETTES & MOBILES
 ===================================== */
-
-/* --- ORDINATEURS --- */
+/* --- ORDINATEUR --- */
 .footer-content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1421,9 +1420,11 @@ mark {
 
 /* --- TABLETTES --- */
 @media (max-width: 1100px) {
+
     .footer-content {
         grid-template-columns: repeat(2, 1fr);
         gap: 25px;
+        text-align: left;
     }
 
     .footer-content > :nth-child(4) {
@@ -1432,18 +1433,29 @@ mark {
 }
 
 
-/* --- MOBILES --- */
+/* --- MOBILE --- */
 @media (max-width: 600px) {
+
     .footer-content {
-        grid-template-columns: 1fr;
-        gap: 25px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px 15px;
         text-align: center;
     }
 
+    /* Colonne 3 seule sur sa ligne */
+    .footer-content > :nth-child(3) {
+        grid-column: 1 / -1;
+    }
+
+    /* Colonne 4 seule sur sa ligne */
     .footer-content > :nth-child(4) {
-        grid-column: auto;
+        grid-column: 1 / -1;
     }
 }
+
+
+
+
 /* --- TABLETTES ET ÉCRANS INTERMÉDIAIRES --- */
 @media (max-width: 1100px) {
 
