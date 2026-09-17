@@ -1688,8 +1688,9 @@ mark {
 
     .nav-left .nav-photo {
         left: 0;
-        width: 220px;
-        height: 115px;
+       width: 135px;
+    height: 95px;
+
     }
 
     .nav-links {
