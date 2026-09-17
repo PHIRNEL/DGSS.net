@@ -996,3 +996,22 @@ if (navbar) {
     });
 
 }
+
+
+const menuToggle = document.getElementById("menuToggle");
+const navLinks = document.getElementById("navLinks");
+
+menuToggle.addEventListener("click", function () {
+    navLinks.classList.toggle("active");
+});
+/*
+Et pour fermer automatiquement le menu après avoir sélectionné une rubrique :
+*/
+
+const menuLinks = document.querySelectorAll(".nav-links a");
+
+menuLinks.forEach(function (link) {
+    link.addEventListener("click", function () {
+        navLinks.classList.remove("active");
+    });
+});
