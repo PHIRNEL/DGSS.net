@@ -1416,12 +1416,12 @@ mark {
     }
 
     /* Footer sur tablettes : 2 colonnes équilibrées et espacées */
-    .footer-content {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 30px;
-        text-align: left;
-    }
+/* Footer sur tablettes */
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    text-align: left;
 }
 
 
