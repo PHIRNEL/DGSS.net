@@ -1410,11 +1410,20 @@ mark {
 
 .footer-content {
     display: grid;
+
     grid-template-columns: minmax(0, 1fr) 280px;
-    grid-template-rows: auto auto auto auto;
+
+    grid-template-rows:
+        auto
+        auto
+        auto
+        auto;
+
     column-gap: 50px;
     row-gap: 20px;
+
     align-items: start;
+
     text-align: left;
 }
 
@@ -1424,7 +1433,7 @@ mark {
 ===================================== */
 
 .footer-content > .footer-section:nth-child(1) {
-    grid-column: 1;
+    grid-column: 1 / -1;
     grid-row: 1;
 }
 
@@ -1434,7 +1443,7 @@ mark {
 ===================================== */
 
 .footer-content > .footer-section:nth-child(2) {
-    grid-column: 1;
+    grid-column: 1 / -1;
     grid-row: 2;
 }
 
@@ -1444,24 +1453,29 @@ mark {
 ===================================== */
 
 .footer-content > .footer-section:nth-child(3) {
-    grid-column: 1;
+    grid-column: 1 / -1;
     grid-row: 3;
 }
 
 
 /* =====================================
    COLONNE 4
+   AVEC MENTIONS À DROITE
 ===================================== */
 
 .footer-content > .footer-section:nth-child(4) {
     grid-column: 1;
     grid-row: 4;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+
+    padding-top: 20px;
 }
 
 
 /* =====================================
    MENTIONS LÉGALES
-   À DROITE DE COLONNE 4
+   À DROITE DE COL 4
 ===================================== */
 
 .footer-content > .footer-legal {
@@ -1470,18 +1484,31 @@ mark {
 
     align-self: start;
 
-    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
 
-    padding-left: 25px;
+    padding-top: 20px;
 }
+
+
+/* =====================================
+   TITRE MENTIONS
+===================================== */
 
 .footer-legal h3 {
     margin: 0 0 15px 0;
 }
 
+
+/* =====================================
+   LIENS
+===================================== */
+
 .footer-legal ul {
     display: flex;
     flex-wrap: wrap;
+
+    align-items: center;
+
     gap: 0;
 
     list-style: none;
@@ -1504,6 +1531,7 @@ mark {
 
 .footer-legal a {
     color: inherit;
+
     text-decoration: none;
 }
 
@@ -1546,13 +1574,14 @@ mark {
         grid-row: auto;
     }
 
-    .footer-legal {
-        border-left: none;
-
+    .footer-content > .footer-section:nth-child(4) {
         border-top: 1px solid rgba(255, 255, 255, 0.2);
-
-        padding-left: 0;
         padding-top: 20px;
+    }
+
+    .footer-legal {
+        border-top: none;
+        padding-top: 0;
     }
 }
 
@@ -1686,33 +1715,6 @@ mark {
     #searchBar {
         width: 100%;
     }
-
-
-    /* FOOTER */
-
-    .footer-content {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        gap: 25px;
-    }
-
-    .footer-content > .footer-section:nth-child(1),
-    .footer-content > .footer-section:nth-child(2),
-    .footer-content > .footer-section:nth-child(3),
-    .footer-content > .footer-section:nth-child(4),
-    .footer-content > .footer-legal {
-        grid-column: 1;
-        grid-row: auto;
-    }
-
-    .footer-legal {
-        border-left: none;
-
-        border-top: 1px solid rgba(255, 255, 255, 0.2);
-
-        padding-left: 0;
-        padding-top: 20px;
-    }
 }
 
 
@@ -1800,6 +1802,7 @@ mark {
 
     .footer-content {
         display: grid;
+
         grid-template-columns: 1fr;
 
         gap: 25px;
@@ -1817,18 +1820,23 @@ mark {
         order: -1;
     }
 
-    .footer-legal {
-        border-left: none;
-
+    .footer-content > .footer-section:nth-child(4) {
         border-top: 1px solid rgba(255, 255, 255, 0.2);
 
-        padding-left: 0;
         padding-top: 20px;
+    }
+
+    .footer-legal {
+        border-top: none;
+
+        padding-top: 0;
     }
 
     .footer-bottom {
         display: flex;
+
         flex-direction: column;
+
         align-items: center;
 
         gap: 10px;
