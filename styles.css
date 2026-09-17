@@ -1789,3 +1789,90 @@ mark {
         width: 100%; 
     } 
 } 
+
+/* ===================================== */
+/* RESPONSIVE CLEAN */
+/* ===================================== */
+@media (max-width: 768px) {
+
+  .navbar {
+    padding: 10px 15px;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #004080;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .dg-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .dg-photo {
+    height: 320px;
+    width: 90%;
+  }
+
+  .dg-message blockquote {
+    font-size: 14px;
+    text-align: left;
+    padding: 18px;
+  }
+
+  .slide-caption {
+    position: relative;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    border-radius: 0;
+  }
+
+  .documents-table {
+    min-width: 500px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .section-title {
+    font-size: 1.2rem;
+  }
+
+  .dg-photo {
+    height: 260px;
+  }
+
+  .documents-table {
+    min-width: 420px;
+    font-size: 12px;
+  }
+}
+/* ===================================== */
+/* DIRECTEURS RESPONSIVE 2/2 */
+/* ===================================== */
+.directeurs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* tablette */
+@media (max-width: 768px) {
+  .directeurs-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2/2 */
+  }
+}
