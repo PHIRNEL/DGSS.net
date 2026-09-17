@@ -1405,11 +1405,6 @@ mark {
    TABLETTES & MOBILES 
 ===================================== */ 
 /* =====================================
-   RESPONSIVE DESIGN
-   ORDINATEUR / TABLETTE / MOBILE
-===================================== */
-
-/* =====================================
    ORDINATEUR
    1101px et +
 ===================================== */
@@ -1429,8 +1424,8 @@ mark {
 
     .nav-left .nav-photo {
         left: 0;
-        width: 350px;
-        height: 180px;
+        width: 550px;
+        height: 280px;
     }
 
     .nav-links {
@@ -1687,8 +1682,8 @@ mark {
 
     .nav-left .nav-photo {
         left: 0;
-        width: 250px;
-        height: 130px;
+        width: 350px;
+        height: 180px;
 
     }
 
@@ -1937,8 +1932,8 @@ mark {
 
         top: 50%;
         left: 0;
-        width: 250px;
-        height: 130px;
+           width: 350px;
+        height: 180px;
         object-fit: contain;
 
         transform: translateY(-50%);
