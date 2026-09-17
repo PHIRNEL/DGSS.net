@@ -1687,8 +1687,8 @@ mark {
 
     .nav-left .nav-photo {
         left: 0;
-       width: 135px;
-    height: 95px;
+        width: 250px;
+        height: 130px;
 
     }
 
@@ -1937,10 +1937,8 @@ mark {
 
         top: 50%;
         left: 0;
-
-        width: 400px;
-        height: 250px;
-
+        width: 250px;
+        height: 130px;
         object-fit: contain;
 
         transform: translateY(-50%);
