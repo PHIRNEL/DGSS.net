@@ -113,7 +113,7 @@ body {
     left: 0;
     z-index: 1002;
      width: 90px;
-    height: 130px;
+    height: 90px;
     object-fit: contain;
     transform: translateY(-50%);
     filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.15));
